@@ -87,7 +87,7 @@ export function ContactSection() {
 
         <TerminalBlock title="connect.sh" variant="darker">
           <CodeLine># Clone and explore my projects</CodeLine>
-          <CodeLine>git clone https://github.com/ridwanxyzcloud</CodeLine>
+          <CodeLine>git clone https://github.com/GentRoyal</CodeLine>
           <CodeLine output>Cloning into 'projects'...</CodeLine>
           <CodeLine></CodeLine>
           <CodeLine># Or reach out directly</CodeLine>
