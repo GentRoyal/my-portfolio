@@ -72,7 +72,7 @@ export function ContactSection() {
                   Connect with me professionally
                 </p>
                 <a 
-                  href="https://linkedin.com/in/ridwan-lanre-yusuf" 
+                  href="https://www.linkedin.com/in/yusufridwan/" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-primary hover:underline flex items-center gap-1"
@@ -113,7 +113,7 @@ export function ContactSection() {
               className="border-primary/30 hover:border-primary hover:bg-primary/10"
               asChild
             >
-              <a href="https://linkedin.com/in/ridwan-lanre-yusuf" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/yusufridwan/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="w-5 h-5" />
               </a>
             </Button>
