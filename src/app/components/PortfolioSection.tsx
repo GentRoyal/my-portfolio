@@ -16,7 +16,7 @@ const projects: Project[] = [
   {
     id: 1,
     title: "Production AI Backend Systems",
-    description: "Architected and co-engineered FastAPI backends for multiple production AI products at Whiteshield - owning API design, PostgreSQL schema, and end-to-end data flow. Built document-to-vector ETL pipelines handling ingestion, chunking, embedding, and PostgreSQL vector storage for scalable retrieval.",
+    description: "Architected and co-engineered FastAPI backends for multiple production AI products - owning API design, PostgreSQL schema, and end-to-end data flow. Built document-to-vector ETL pipelines handling ingestion, chunking, embedding, and PostgreSQL vector storage for scalable retrieval.",
     impact: "Delivered production-ready API infrastructure enabling multiple AI products across public policy and investor intelligence domains",
     icon: <Zap className="w-6 h-6" />,
     technologies: ["FastAPI", "PostgreSQL", "Vector DB", "ETL Pipelines", "API Design", "Docker"],
@@ -25,7 +25,7 @@ const projects: Project[] = [
   {
     id: 2,
     title: "CNN Computer Vision Classifier",
-    description: "Trained and shipped a CNN computer vision classifier for public-sector site analysis at Whiteshield, achieving 90%+ precision and recall. Deployed as part of a live decision-support system. Augmented with LLM reasoning layers for waste type detection and legality assessment.",
+    description: "Trained and shipped a CNN computer vision classifier for public-sector site analysis, achieving 90%+ precision and recall. Deployed as part of a live decision-support system. Augmented with LLM reasoning layers for waste type detection and legality assessment.",
     impact: "90%+ precision/recall deployed in production, transforming a classifier into a multi-modal decision engine",
     icon: <Eye className="w-6 h-6" />,
     technologies: ["CNN", "Computer Vision", "OpenAI", "LLM Integration", "Production ML", "Multi-modal AI"],
@@ -34,7 +34,7 @@ const projects: Project[] = [
   {
     id: 3,
     title: "Geospatial Data Pipelines at Scale",
-    description: "Built production geospatial pipelines over SHP and large-scale TIFF files at Whiteshield. Provisioned Azure Blob Storage, automated TIFF processing, and generated emergency facility, transport accessibility, and rainfall proximity metrics at scale.",
+    description: "Built production geospatial pipelines over SHP and large-scale TIFF files. Provisioned Azure Blob Storage, automated TIFF processing, and generated emergency facility, transport accessibility, and rainfall proximity metrics at scale.",
     impact: "Automated large-scale geospatial processing with Azure cloud integration, enabling infrastructure intelligence",
     icon: <Network className="w-6 h-6" />,
     technologies: ["Azure Blob Storage", "SHP/TIFF Processing", "Python", "Geospatial Analysis", "Cloud Integration"],
@@ -43,7 +43,7 @@ const projects: Project[] = [
   {
     id: 4,
     title: "Production RAG Systems",
-    description: "Built production RAG systems at Whiteshield using OpenAI and Gemini - combining embedding retrieval, prompt engineering, and context-aware generation to deliver accurate, document-grounded AI responses for policy insights and intelligence.",
+    description: "Built production RAG systems using OpenAI and Gemini - combining embedding retrieval, prompt engineering, and context-aware generation to deliver accurate, document-grounded AI responses for policy insights and intelligence.",
     impact: "Delivered context-aware, document-grounded AI responses with high accuracy across multiple domains",
     icon: <Zap className="w-6 h-6" />,
     technologies: ["OpenAI", "Gemini API", "RAG", "LangChain", "Vector Embeddings", "Prompt Engineering"],
@@ -52,7 +52,7 @@ const projects: Project[] = [
   {
     id: 5,
     title: "Autonomous Investor Outreach Agent",
-    description: "Engineered an autonomous outreach agent at Whiteshield integrating a third-party contacts API to automate investor profile lookup, contact discovery, and route-to-reach recommendations for investment intelligence workflows.",
+    description: "Engineered an autonomous outreach agent integrating a third-party contacts API to automate investor profile lookup, contact discovery, and route-to-reach recommendations for investment intelligence workflows.",
     impact: "Automated investor intelligence gathering, reducing manual research time and improving outreach efficiency",
     icon: <Users className="w-6 h-6" />,
     technologies: ["API Integration", "LLM Agents", "Python", "Automation", "Data Extraction"],
@@ -61,7 +61,7 @@ const projects: Project[] = [
   {
     id: 6,
     title: "High-Accuracy Web Scraping System",
-    description: "Delivered a high-accuracy web scraping system at Whiteshield using Playwright, Selenium, and BeautifulSoup - extracting structured people and company profiles including images at 90%+ accuracy across heterogeneous sources.",
+    description: "Delivered a high-accuracy web scraping system using Playwright, Selenium, and BeautifulSoup - extracting structured people and company profiles including images at 90%+ accuracy across heterogeneous sources.",
     impact: "90%+ extraction accuracy enabling automated intelligence gathering from diverse web sources",
     icon: <Network className="w-6 h-6" />,
     technologies: ["Playwright", "Selenium", "BeautifulSoup", "Python", "Data Extraction"],
