@@ -14,7 +14,7 @@ const timeline: TimelineItem[] = [
     year: "Aug 2025 - Present",
     title: "Data Scientist",
     company: "Whiteshield",
-    description: "Delivering production AI systems across public policy, urban infrastructure, and investment intelligence - architecting FastAPI backends, building RAG systems, training CNN classifiers, and engineering geospatial pipelines at scale"
+    description: "Delivering production AI systems across public policy, urban infrastructure, and investment intelligence - architecting FastAPI backends, building RAG systems, engineering geospatial waste-detection pipelines, and building real-time video analytics pipelines for on-premises camera networks"
   },
   {
     year: "Oct 2023 - Aug 2025",
@@ -41,7 +41,7 @@ const techStack = {
   ],
   aiFrameworks: [
     "OpenAI API", "Gemini API", "LangChain", "Groq/Llama", "Ollama", "Scikit-learn",
-    "RAG Systems", "NLP", "Computer Vision", "Time-Series Forecasting"
+    "RAG Systems", "NLP", "Computer Vision", "Object Detection & Tracking", "Time-Series Forecasting"
   ],
   programmingTools: [
     "Python", "Git", "Linux/WSL", "Playwright", "Selenium", "BeautifulSoup",
@@ -59,7 +59,7 @@ export function AboutSection() {
           </div>
           <h2 className="mb-4">Journey & Expertise</h2>
           <p className="max-w-2xl text-muted-foreground">
-            I build AI systems that work in production - RAG pipelines, vision classifiers, LLM agents, and data-intensive 
+            I build AI systems that work in production - RAG pipelines, geospatial and video analytics, LLM agents, and data-intensive
             backends across domains from public policy to waste management to investor intelligence. With hands-on experience 
             in the full ML lifecycle from ETL and feature engineering to deployment and MLOps, I bring a rare mix of breadth 
             and execution. Backed by a growing foundation in Financial Engineering and Data Science at postgraduate level, 

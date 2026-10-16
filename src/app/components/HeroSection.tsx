@@ -25,7 +25,7 @@ export function HeroSection() {
         
         <p className="max-w-2xl mx-auto mb-10 text-muted-foreground">
           Experienced in the full ML lifecycle—from ETL and feature engineering to deployment and MLOps. 
-          Building production AI systems including RAG pipelines, vision classifiers, LLM agents, and data-intensive 
+          Building production AI systems including RAG pipelines, geospatial and video analytics, LLM agents, and data-intensive
           backends across domains from public policy to waste management to investor intelligence.
         </p>
         
