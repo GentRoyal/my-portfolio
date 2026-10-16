@@ -1,81 +1,65 @@
-import { Button } from "./ui/button";
-import { ArrowRight, Terminal } from "lucide-react";
+import { StatusLine } from "./StatusLine";
 
 export function HeroSection() {
-  const scrollToPortfolio = () => {
-    document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' });
+  const scrollTo = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const stack = ["FastAPI", "LangChain", "MLflow", "RAG"];
+
   return (
-    <section className="min-h-screen flex items-center justify-center px-6 py-20 relative overflow-hidden">
-      {/* Grid background effect */}
-      <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
-      
-      <div className="max-w-5xl mx-auto text-center relative z-10">
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/20 bg-primary/5 mb-8">
-          <Terminal className="w-4 h-4 text-primary" />
-          <span className="text-sm text-primary">Data Scientist & AI/ML Engineer</span>
-        </div>
-        
-        <h1 className="mb-6 text-primary">
-          Ridwan Lanre Yusuf
-          <br />
-          <span className="text-muted-foreground text-3xl md:text-4xl">Scaling AI Solutions from Prototype to Production</span>
-        </h1>
-        
-        <p className="max-w-2xl mx-auto mb-10 text-muted-foreground">
-          Experienced in the full ML lifecycle—from ETL and feature engineering to deployment and MLOps. 
-          Building production AI systems including RAG pipelines, geospatial and video analytics, LLM agents, and data-intensive
-          backends across domains from public policy to waste management to investor intelligence.
-        </p>
-        
-        <div className="flex items-center justify-center gap-4">
-          <Button 
-            onClick={scrollToPortfolio}
-            className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-6 group"
-          >
-            View Portfolio
-            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </Button>
-          
-          <Button 
-            variant="outline" 
-            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-            className="border-primary/30 hover:border-primary hover:bg-primary/5 px-8 py-6"
-          >
-            Get in Touch
-          </Button>
-        </div>
-        
-        {/* Floating tech indicators */}
-        <div className="mt-16 flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground">
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-            <span>FastAPI</span>
+    <section className="min-h-screen flex flex-col relative overflow-hidden">
+      <div className="flex-1 flex items-center px-6 pt-28 pb-16">
+        <div className="max-w-5xl mx-auto w-full min-w-0">
+          <p className="mono-label mb-10">
+            ~/ridwan <span className="text-muted-foreground">· data scientist &amp; ai/ml engineer</span>
+          </p>
+
+          <h1 className="text-5xl sm:text-6xl md:text-8xl leading-[0.95] mb-8 text-foreground">
+            Ridwan Lanre Yusuf
+            <br />
+            <i className="text-muted-foreground">prototype to production.</i>
+          </h1>
+
+          <p className="font-mono text-sm text-chrome mb-6">// scaling ai solutions, end to end.</p>
+
+          <p className="max-w-2xl mb-12 text-muted-foreground">
+            Experienced in the full ML lifecycle, from ETL and feature engineering to deployment and MLOps.
+            Building production AI systems including RAG pipelines, geospatial and video analytics, LLM agents, and data-intensive
+            backends across domains from public policy to waste management to investor intelligence.
+          </p>
+
+          <div className="flex flex-wrap items-center gap-8 mb-16 mono-caps">
+            <button onClick={() => scrollTo('portfolio')} className="text-primary hover:text-foreground transition-colors">
+              view portfolio ↩
+            </button>
+            <button onClick={() => scrollTo('contact')} className="text-chrome hover:text-foreground transition-colors">
+              :contact
+            </button>
           </div>
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-            <span>LangChain</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-            <span>MLflow</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-            <span>RAG Systems</span>
-          </div>
+
+          <pre className="text-sm whitespace-pre-wrap">
+            <span className="text-kw">const</span> <span className="text-fn">stack</span>
+            <span className="text-chrome"> = [</span>
+            {stack.map((item, i) => (
+              <span key={item}>
+                <span className="text-str">"{item}"</span>
+                {i < stack.length - 1 && <span className="text-chrome">, </span>}
+              </span>
+            ))}
+            <span className="text-chrome">];</span>
+          </pre>
         </div>
       </div>
-      
-      <style>{`
-        .bg-grid-pattern {
-          background-image: 
-            linear-gradient(to right, #2a2a2a 1px, transparent 1px),
-            linear-gradient(to bottom, #2a2a2a 1px, transparent 1px);
-          background-size: 40px 40px;
-        }
-      `}</style>
+
+      <StatusLine
+        path="~/ridwan/portfolio.tsx"
+        fields={[
+          { label: "role", value: "data scientist" },
+          { label: "focus", value: "production ai", hot: true },
+          { label: "stack", value: "python · ml · cloud" },
+        ]}
+      />
     </section>
   );
 }

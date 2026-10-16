@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
-import { Menu, X, Terminal } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,23 +36,21 @@ export function Navigation() {
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <button 
+            <button
               onClick={() => scrollToSection("#home")}
-              className="flex items-center gap-2 group"
+              className="flex items-center gap-3 min-h-11 text-chrome hover:text-foreground transition-colors"
             >
-              <div className="p-2 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                <Terminal className="w-5 h-5" />
-              </div>
-              <span className="hidden md:block">Ridwan Lanre Yusuf</span>
+              <span className="text-primary font-mono text-lg leading-none">R</span>
+              <span className="mono-caps tracking-[0.3em]">Ridwan.Yusuf</span>
             </button>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center gap-8">
+            <div className="hidden md:flex items-center gap-2">
               {navItems.map((item) => (
                 <button
                   key={item.href}
                   onClick={() => scrollToSection(item.href)}
-                  className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                  className="min-h-11 px-3 font-mono text-xs tracking-[0.14em] lowercase text-muted-foreground hover:text-foreground transition-colors"
                 >
                   {item.label}
                 </button>
@@ -80,7 +78,7 @@ export function Navigation() {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="text-2xl hover:text-primary transition-colors"
+                className="font-serif text-4xl hover:text-primary transition-colors"
               >
                 {item.label}
               </button>

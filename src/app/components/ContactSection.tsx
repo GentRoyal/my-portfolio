@@ -8,8 +8,8 @@ export function ContactSection() {
     <section id="contact" className="py-24 px-6 bg-muted/20">
       <div className="max-w-5xl mx-auto">
         <div className="mb-16 text-center">
-          <div className="inline-block px-4 py-1 rounded-full bg-primary/10 border border-primary/20 mb-4">
-            <span className="text-sm text-primary">Contact</span>
+          <div className="mb-4">
+            <span className="mono-label">~/Contact ↓</span>
           </div>
           <h2 className="mb-4">Let's Build Something Together</h2>
           <p className="max-w-2xl mx-auto text-muted-foreground">

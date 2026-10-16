@@ -155,8 +155,8 @@ export function PortfolioSection() {
     <section id="portfolio" className="py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
-          <div className="inline-block px-4 py-1 rounded-full bg-primary/10 border border-primary/20 mb-4">
-            <span className="text-sm text-primary">Portfolio</span>
+          <div className="mb-4">
+            <span className="mono-label">~/Portfolio ↓</span>
           </div>
           <h2 className="mb-4">End-to-End AI Solutions</h2>
           <p className="max-w-2xl text-muted-foreground">

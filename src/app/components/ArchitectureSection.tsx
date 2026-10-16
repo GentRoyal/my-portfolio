@@ -6,8 +6,8 @@ export function ArchitectureSection() {
     <section className="py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
-          <div className="inline-block px-4 py-1 rounded-full bg-primary/10 border border-primary/20 mb-4">
-            <span className="text-sm text-primary">Architecture</span>
+          <div className="mb-4">
+            <span className="mono-label">~/Architecture ↓</span>
           </div>
           <h2 className="mb-4">Production ML System Design</h2>
           <p className="max-w-2xl text-muted-foreground">
@@ -146,9 +146,9 @@ interface ArchitectureNodeProps {
 
 function ArchitectureNode({ icon, label, color }: ArchitectureNodeProps) {
   const colorClasses = {
-    cyan: "border-cyan-500/50 bg-cyan-500/10 text-cyan-400",
-    green: "border-green-500/50 bg-green-500/10 text-green-400",
-    purple: "border-purple-500/50 bg-purple-500/10 text-purple-400"
+    cyan: "border-ty/50 bg-ty/10 text-ty",
+    green: "border-fn/50 bg-fn/10 text-fn",
+    purple: "border-kw/50 bg-kw/10 text-kw"
   };
 
   return (
