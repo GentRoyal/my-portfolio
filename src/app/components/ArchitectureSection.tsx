@@ -67,7 +67,7 @@ export function ArchitectureSection() {
             </div>
             <h4 className="mb-2">Data Pipeline</h4>
             <p className="text-sm text-muted-foreground mb-4">
-              Engineered geospatial and document processing pipelines with automated workflows and cloud integration.
+              Geospatial and document processing pipelines with automated workflows and cloud integration.
             </p>
             <ul className="text-sm space-y-2">
               <li className="flex items-start gap-2">

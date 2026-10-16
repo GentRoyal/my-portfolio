@@ -14,7 +14,7 @@ const timeline: TimelineItem[] = [
     year: "Aug 2025 - Present",
     title: "Data Scientist",
     company: "Whiteshield",
-    description: "Delivering production AI systems across public policy, urban infrastructure, and investment intelligence - architecting FastAPI backends, building RAG systems, engineering geospatial waste-detection pipelines, and building real-time video analytics pipelines for on-premises camera networks"
+    description: "Working on production AI systems across public policy, urban infrastructure, and investment intelligence - FastAPI backends, RAG systems, geospatial waste-detection pipelines, and real-time video analytics pipelines for on-premises camera networks"
   },
   {
     year: "Oct 2023 - Aug 2025",
