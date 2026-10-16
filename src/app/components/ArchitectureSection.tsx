@@ -3,7 +3,7 @@ import { Database, Server, GitBranch, Cloud, Activity, Lock } from "lucide-react
 
 export function ArchitectureSection() {
   return (
-    <section className="py-24 px-6">
+    <section id="architecture" className="py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16">
           <div className="mb-4">

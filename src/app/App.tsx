@@ -5,6 +5,7 @@ import { ArchitectureSection } from "./components/ArchitectureSection";
 import { AboutSection } from "./components/AboutSection";
 import { ContactSection } from "./components/ContactSection";
 import { Footer } from "./components/Footer";
+import { StatusLine } from "./components/StatusLine";
 import { useEffect } from "react";
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
       <AboutSection />
       <ContactSection />
       <Footer />
+      <StatusLine />
     </div>
   );
 }

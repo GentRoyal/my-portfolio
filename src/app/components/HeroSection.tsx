@@ -1,5 +1,3 @@
-import { StatusLine } from "./StatusLine";
-
 export function HeroSection() {
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
@@ -51,15 +49,6 @@ export function HeroSection() {
           </pre>
         </div>
       </div>
-
-      <StatusLine
-        path="~/ridwan/portfolio.tsx"
-        fields={[
-          { label: "role", value: "data scientist" },
-          { label: "focus", value: "production ai", hot: true },
-          { label: "stack", value: "python · ml · cloud" },
-        ]}
-      />
     </section>
   );
 }
