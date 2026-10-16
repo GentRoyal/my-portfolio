@@ -1,6 +1,6 @@
 import { Card } from "./ui/card";
 import { Badge } from "./ui/badge";
-import { TrendingUp, Zap, Shield, Network, Eye, Users, MessageSquare, Trophy, LineChart } from "lucide-react";
+import { Zap, Shield, Network, Eye, Users, MessageSquare, Trophy, LineChart, Map as MapIcon, ScanSearch, Video, Boxes } from "lucide-react";
 
 interface Project {
   id: number;
@@ -13,6 +13,42 @@ interface Project {
 }
 
 const projects: Project[] = [
+  {
+    id: 12,
+    title: "Illegal Waste Monitoring Platform",
+    description: "Engineered the core of a geospatial platform that turns aerial imagery into tracked, actionable waste sites. Built the inference pipeline from GeoTIFF tiling on a fixed 210 m grid through waste classification and YOLO detection, then derived sites by merging detections into geo-referenced polygons with equal-area waste measurements, matching them across survey runs to preserve each site's lifecycle. Shipped FastAPI services for priority scoring, risk forecasting, land-use layers and field notes with image evidence, and extended a read-only text-to-SQL analytics agent.",
+    impact: "Took aerial surveys from raw imagery to one deduplicated, persistent record per waste site that field teams can prioritise, inspect and resolve over time",
+    icon: <MapIcon className="w-6 h-6" />,
+    technologies: ["YOLO", "Geospatial ML", "GeoTIFF/COG", "Shapely", "FastAPI", "PostgreSQL", "Redis", "Azure Blob Storage", "Text-to-SQL Agent"],
+    category: "Geospatial AI"
+  },
+  {
+    id: 13,
+    title: "Multimodal LLM Detection Benchmark",
+    description: "Built a paired evaluation harness that gives GPT-5 and Gemini identical prompts, images and few-shot examples under zero-shot, global and district-specific conditions, scoring mAP, box-match F1, waste-type F1, latency and cost per run. Paired it with a site-level annotation app (React/TypeScript UI, Python API, PostgreSQL) where reviewers confirm, redraw, delete or flag model detections, turning corrections into labelled data.",
+    impact: "Zero-shot Gemini reached ~5× GPT-5's box-match F1 (0.26 vs 0.05) at a third of the latency, while showing neither model localises tightly enough alone, which supports a classifier-gated, two-stage detection design",
+    icon: <ScanSearch className="w-6 h-6" />,
+    technologies: ["GPT-5", "Gemini", "Vision LLMs", "Object Detection Metrics", "React", "TypeScript", "PostgreSQL"],
+    category: "AI/ML"
+  },
+  {
+    id: 14,
+    title: "Real-Time Video Analytics Pipelines",
+    description: "Built the camera-to-inference data pipeline for three on-premises video analytics prototypes covering traffic monitoring, visitor analytics and campus classroom analytics. Each camera runs in its own supervised worker that reads RTSP, reconnects with jittered backoff and tracks camera health (stalled, frozen, blurred, blocked or re-aimed views), then resamples frames, masks them by scene zones and passes them to detection, tracking and line counting with RF-DETR, YOLOX and BoT-SORT.",
+    impact: "Analytics run end to end on recorded and simulated camera streams, with 330+ tests on the campus build covering live RTSP and full pipeline runs; faulty cameras report as unavailable, never as zero counts",
+    icon: <Video className="w-6 h-6" />,
+    technologies: ["Computer Vision", "RTSP", "MediaMTX", "PyAV", "RF-DETR", "YOLOX", "BoT-SORT", "Multi-Object Tracking"],
+    category: "Computer Vision"
+  },
+  {
+    id: 15,
+    title: "Reusable Vision Analytics Template",
+    description: "Distilled those three projects into a template that new on-premises video analytics projects copy and extend. It covers everything between the cameras and project-specific rules: a node supervisor, ingest with watchdog and heartbeat, a camera-health state machine, preprocessing, a pluggable model-service interface with a CPU YOLOX detector on ONNX Runtime, BoT-SORT tracking, versioned stage contracts, a browser Scene Zoner for drawing zones and counting lines, and a live page that overlays detections on WebRTC video, synchronised by RTP timestamp.",
+    impact: "One command brings up the full stack, so new projects build on stable, versioned records instead of re-implementing ingestion and tracking, anonymous and metadata-only by design",
+    icon: <Boxes className="w-6 h-6" />,
+    technologies: ["ONNX Runtime", "YOLOX", "BoT-SORT", "WebRTC", "Server-Sent Events", "MediaMTX", "Python", "System Design"],
+    category: "MLOps"
+  },
   {
     id: 1,
     title: "Production AI Backend Systems",
